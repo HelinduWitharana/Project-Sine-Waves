@@ -1,0 +1,37 @@
+<html>
+     <head>
+	     <title> Sine Waves V1.0 </title>
+	 </head>
+	 <link rel="stylesheet" type="text/css" href="Sine waves css V1.0.css">
+	 
+	 <body>
+		 
+		 <div class="main_wrap" id="main_wrap">
+			 
+			 <div class="Canvas_area" id="Canvas_area">
+				 <canvas class="Canvas" id="Canvas"></canvas>
+			 </div>
+			 
+			 <div class="Settings_area" id="Settings_area">
+			     <h1 class="Amplitude_title"> Amplitude </h1>
+				 <input class="amplitude_slider" id="amplitude_slider" type="range" min="1" max="700" value="500" oninput="Formula_calculate()">
+				 
+				 <h1 class="Wavelength_title"> Wavelength </h1>
+				 <input class="wavelength_slider" id="wavelength_slider" type="range" min="50" max="800" value="300" oninput="Formula_calculate()">
+				 
+				 <h1 class="Frequency_title"> Frequency </h1>
+				 <input class="frequency_slider" id="frequency_slider" type="range" min="0" max="1000" value="50" oninput="Formula_calculate()">
+			 </div>
+			 
+			 <div class="Formula_area" id="Formula_area">
+				 <h1 class="Formula_title"> ν = f λ </h1>
+				 <h1 class="Formula" id="Formula"> -------- </h1>
+			 </div>
+			 
+		 </div>
+		 
+	 <script defer src="Sine waves js V1.0.js"> </script>
+ 	 <body>
+<html>
+ 
+ <!-- © Helindu Witharana -->

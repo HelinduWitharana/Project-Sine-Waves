@@ -1,0 +1,208 @@
+html {scroll-behavior: smooth;}
+body{
+	 width: 100%;
+	 height: 100%;
+     padding: 0px;
+	 border: 0px;
+	 margin: 0px;
+	 overflow-x: hidden;
+	 overflow-y: hidden;
+	 background-color: #191919;
+	}
+
+:root {
+	 font-family: arial;
+	}
+
+::-webkit-scrollbar {
+     width: 0;
+	}
+
+.main_wrap{
+	 display: grid;
+	 grid-template-rows: 40% 60%;
+	 grid-template-columns: 50% 50%;
+	
+	 grid-template-areas:
+	 "Canvas_area Canvas_area"
+	 "Settings_area Formula_area";
+	 
+	 place-items: center;
+	 width: 100%;
+	 height: 100%;
+     padding: 0px;
+	 border: 0px;
+	 margin: 0px;
+	}
+
+.Canvas_area{
+	 display: grid;
+	 place-items: center;
+	 grid-area: Canvas_area;
+	 width: 100%;
+	 height: 100%;
+	 padding: 0px;
+	 border:0px;
+	 margin: 0px;
+	 background-color: #e2e2e2;
+	}
+
+.Canvas{
+	 padding: 0px;
+	 border:0px;
+	 border-radius: 15px;
+	 box-shadow: 0 0 0 35px #191919;
+	 margin: 0px;
+	}
+	
+.Settings_area{
+	 display: grid;
+	 grid-template-rows: 4% 1fr 1fr 2fr 1fr 1fr 2fr 1fr 1fr 1fr 4%;
+	 grid-template-columns: 2% 1fr 2%;
+	 
+	 grid-template-areas:
+	 ". . ."
+	 ". Amplitude_title ."
+	 ". amplitude_slider ."
+	 ". . ."
+	 ". Wavelength_title ."
+	 ". wavelength_slider ."
+	 ". . ."
+	 ". Frequency_title ."
+	 ". frequency_slider ."
+	 ". . ."
+	 ". . .";
+	 
+	 place-items: center;
+	 grid-area: Settings_area;
+	 width: 100%;
+	 height: 100%;
+	 padding: 0px;
+	 border:0px;
+	 margin: 0px;
+	 background-color: #191919;
+	}
+	
+.amplitude_slider{
+	 grid-area: amplitude_slider;
+	}
+.Amplitude_title{
+	 grid-area: Amplitude_title;
+	 width: 80%;
+	 height: 100%;
+	 padding: 0px;
+	 border:0px;
+	 margin: 0px;
+	 color: #fff;
+	}
+
+.wavelength_slider{
+	 grid-area: wavelength_slider;
+	}
+.Wavelength_title{
+	 grid-area: Wavelength_title;
+	 width: 80%;
+	 height: 100%;
+	 padding: 0px;
+	 border:0px;
+	 margin: 0px;
+	 color: #fff;
+	}
+	
+.frequency_slider{
+	 grid-area: frequency_slider;
+	}
+.Frequency_title{
+	 grid-area: Frequency_title;
+	 width: 80%;
+	 height: 100%;
+	 padding: 0px;
+	 border:0px;
+	 margin: 0px;
+	 color: #fff;
+	}
+	
+.amplitude_slider, .wavelength_slider, .frequency_slider{
+	 -webkit-appearance: none;
+	 width: 80%;
+	 height: 15px;
+     border-radius: 10px;
+	 background: #0075ff;
+	 outline: none;
+	 opacity: 1;
+	 transition: 0.3s;
+	}
+
+.amplitude_slider:hover, .wavelength_slider:hover, .frequency_slider:hover{
+	 background: #7ab7ff;
+	}
+
+.amplitude_slider::-webkit-slider-thumb, .wavelength_slider::-webkit-slider-thumb, .frequency_slider::-webkit-slider-thumb{
+     -webkit-appearance: none;
+	 appearance: none;
+	 width: 25px;
+	 height: 25px;
+	 border-radius: 50%;
+	 background: #ff0000;
+	 cursor: pointer;
+	 transition: 0.3s;
+	}
+	
+.amplitude_slider::-webkit-slider-thumb:hover, .wavelength_slider::-webkit-slider-thumb:hover, .frequency_slider::-webkit-slider-thumb:hover{
+     -webkit-appearance: none;
+	 appearance: none;
+	 width: 28px;
+	 height: 28px;
+	 border-radius: 50%;
+	 background: #ff7474;
+	 cursor: pointer;
+	 transition: 0.3s;
+	}
+	
+/*-----------------------------------------------------------------------*/
+
+.Formula_area{
+	 display: grid;
+	 grid-template-rows: 8% 1fr 1fr 8%;
+	 grid-template-columns: 2% 1fr 2%;
+	 
+	 grid-template-areas:
+	 ". . ."
+	 ". Formula_title ."
+	 ". Formula ."
+	 ". . .";
+	 
+	 place-items: center;
+	 grid-area: Formula_area;
+	 width: 95%;
+	 height: 92%;
+	 padding: 0px;
+	 border:0px;
+	 margin: 0px;
+	 border-radius: 15px;
+	 background-color: #676767;
+	}
+	
+.Formula_title{
+	 grid-area: Formula_title;
+	 padding: 0px;
+	 border:0px;
+	 margin: 0px;
+	 font-family: auto;
+	 font-size: 60px;
+	 color: #fff;
+	 text-shadow: 0px 0px 10px #000;
+	}
+	
+.Formula{
+	 grid-area: Formula;
+	 padding: 0px;
+	 border:0px;
+	 margin: 0px;
+	 font-family: auto;
+	 font-size: 60px;
+	 color: #fff;
+	 text-shadow: 0px 0px 10px #000;
+	}
+	
+/* © Helindu Witharana */
